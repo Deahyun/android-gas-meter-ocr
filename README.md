@@ -22,6 +22,3 @@ ChatGPT API 를 사용해서 안드로이드 카메라로 가스검침기 이미
 - OpenAI ChatGPT Vision API
 - 카메라 촬영 이미지 기반 숫자 인식
 
-## Notes
-
-LLM 기반 기차표 예매 에이전트 프로젝트는 별도 저장소 [`korail-booking-llm-agent`](https://github.com/Deahyun/korail-booking-llm-agent) 로 분리되었습니다.
