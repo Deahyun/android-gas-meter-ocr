@@ -1,19 +1,27 @@
-# AI_OCR
-ChatGPT 의 API 를 사용해서 안드로이드에서 이미지를 카메라로 촬영 후 이미지내의 숫자를 찾습니다.
+# Android Gas Meter OCR
 
-안드로이드 앱에서 카메라로 가스검침기 이미지 촬영후 가스검침기 내의 숫자를 읽어오는 프로그램입니다.
+ChatGPT API 를 사용해서 안드로이드 카메라로 가스검침기 이미지를 촬영한 뒤, 이미지 내의 숫자를 자동으로 인식하는 프로그램입니다.
 
-동작하는 동영상의 링크입니다.
-https://youtube.com/shorts/_0Bngwweimk?feature=share
+## 동작 방식
 
-이 동영상에서 사용된 원본 이미지입니다.
+1. 안드로이드 앱에서 카메라로 가스검침기를 촬영
+2. 촬영 이미지를 ChatGPT Vision API 로 전송
+3. 검침기 표시 숫자를 추출해 앱 화면에 표시
+
+## Demo
+
+동영상: https://youtube.com/shorts/_0Bngwweimk?feature=share
+
+테스트 원본 이미지:
+
 <img width="390" height="484" alt="가스검침기_이미지" src="https://github.com/user-attachments/assets/0a473f15-8f32-4ec2-b4fe-788f6ae7166c" />
 
-LLM 을 사용해서 기차표 예매 하는 agent 프로그램 동영상을 추가했습니다.
+## Tech
 
-리눅스 20.04 환경에서 ollama 에서 gemma3 모델 로딩후, 이걸 LLM 으로 사용했습니다.
-입력된 자연어를 LLM 으로 처리후 selenium 과 연동해서 브라우저 자동화를 했습니다.
-대상 사이트는 실제 코레일 사이트 입니다.
+- Android (Java/Kotlin)
+- OpenAI ChatGPT Vision API
+- 카메라 촬영 이미지 기반 숫자 인식
 
-실행 과정을 표시하는 동영상 링크입니다.
-https://www.youtube.com/watch?v=vuokYXSmWLM
+## Notes
+
+LLM 기반 기차표 예매 에이전트 프로젝트는 별도 저장소 [`korail-booking-llm-agent`](https://github.com/Deahyun/korail-booking-llm-agent) 로 분리되었습니다.
